@@ -10,20 +10,20 @@
 <body>
 	<h1>Job App Form</h1><br><br>
 	<main>
-		<form>
+		<form method="post">
 			<label for="name">Name</label><br>
-			<input type="text" id="name" placeholder="Full Name" class="width" required><br><br>
+			<input type="text" id="name" placeholder="Full Name" required /><br><br>
 
 			<label for="email">Email</label><br>
-			<input type="email" id="email" placeholder="Email" class="width" required><br><br>
+			<input type="email" id="email" name="email" placeholder="Email" required /><br><br>
 
 			<label for="gender">Gender</label><br>
-			<input type="radio" name="gender" value="male" required>
+			<input type="radio" name="gender" value="male" required />
 			<label for="male">male</label><br>
-			<input type="radio" name="gender" value="female" required>
+			<input type="radio" name="gender" value="female" required />
 			<label for="female">female</label><br><br>
 
-			<label for="laptop">Laptop Option</label><br>
+			<label for="laptop" id="laptop">Laptop Option</label><br><br>
 			<select name="laptops" id="laptop"><br>
 				<option disabled>--select an option--</option>
 				<option value="apple">Apple</option>
@@ -31,20 +31,19 @@
 				<option value="hp">HP</option>
 			</select><br><br>
 
-			<label for="age">Age</label>
-			<input type="number" id="age" placeholder="Enter Age" class="width" required><br><br>
+			<label for="age">Age</label><br>
+			<input type="number" id="age" name="age" placeholder="Enter Age" required /><br><br>
 
-			<label for="dob">DOB</label>
-			<input type="date" id="dob" name="DOB" class="width" required><br><br>
+			<label for="dob">DOB</label><br>
+			<input type="date" id="dob" name="DOB" required /><br><br>
 
-			<label for="password">password</label>
-			<input type="password" id="password" name="password" placeholder="enter your password" class="width"
-				required><br><br>
+			<label for="password">password</label><br>
+			<input type="password" id="password" name="password" placeholder="enter your password" required><br><br>
+			<label for="confirm password">Confirm password</label><br>
+			<input type="password" name="confirm password" required /><br><br>
 
-			<label for="confirm password">Confirm password</label>
-			<input type="password" name="confirm password" class="width" required><br><br>
-
-
+			<label for="portfolio">Enter Your Portfolio Link</label>
+			<input type="url" name="link" id="portfolio"><br><br>
 			<button type="submit" id="btn" value="submit">submit</button><br>
 		</form>
 	</main>

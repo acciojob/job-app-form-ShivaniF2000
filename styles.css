@@ -1,2 +1,36 @@
-
-/* Your CSS Code here. */
+*{
+    background-color: black;
+}
+h1{
+    color: white;
+    position: absolute;
+    top: 55px;
+    left: 450px;
+}
+main{
+    display: block;
+    position: absolute;
+    top:115px;
+    left: 200px;
+}
+form{
+    color:white;
+    position: relative;
+}
+#name,#email,#age,#dob,#password{
+    display: block;
+    border:none;
+    color:white;
+    width:700px;
+    border-bottom: 1px solid white;
+}
+#laptop,#btn{
+    color: white;
+}
+#btn{
+    position: relative;
+    color: black;
+    background-color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
